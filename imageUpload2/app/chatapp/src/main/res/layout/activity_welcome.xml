@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="WELCOME TO TELEMEDICINE SERVICE"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="43dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_centerInParent="true"
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/RuralLogin"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_round"
+        android:gravity="center"
+        android:text="click for rural Dr."
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/UrbanLogin"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_round"
+        android:gravity="center"
+        android:text="click for Urban Dr."
+        android:textColor="#FFFfFF"
+        android:textSize="20dp" />
+
+
+</LinearLayout>
